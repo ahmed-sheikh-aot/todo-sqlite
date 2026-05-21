@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="Add Note."
+        android:textColor="@color/orange"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/save"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView"
+        android:src="@drawable/baseline_done_24"
+        app:tint="@color/orange" />
+
+    <EditText
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:hint="Enter the title"
+        android:layout_marginHorizontal="20dp"
+
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:id="@+id/title"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/orange_border"
+        android:layout_height="60dp"/>
+
+    <EditText
+        android:layout_below="@+id/title"
+        android:id="@+id/description"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:hint="Enter the description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:maxLines="4"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/orange_border"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
